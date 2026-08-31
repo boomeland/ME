@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Destefani;Adrien;;;
+FN:Adrien Destefani
+TITLE:Informaticien de gestion
+EMAIL;TYPE=INTERNET:adrien.destefani@gmail.com
+TEL;TYPE=CELL:+41792787137
+ADR;TYPE=HOME:;;;Valais;;;Suisse
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/adrien-destefani-33452732a/
+URL;TYPE=GitHub:https://github.com/boomeland
+END:VCARD
