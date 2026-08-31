@@ -88,6 +88,13 @@ body {
   font-size: 1.05rem;
 }
 
+.tagline {
+  color: var(--text);
+  font-weight: 500;
+  margin: 0.6rem 0 0;
+  font-size: 1.05rem;
+}
+
 .tags {
   list-style: none;
   display: flex;
