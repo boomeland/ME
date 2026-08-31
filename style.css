@@ -1,0 +1,155 @@
+:root {
+  --bg: #0B0F0D;
+  --green: #3ECF8E;
+  --text: #E6E9E7;
+  --text-dim: #8A9A93;
+  --surface: #121815;
+  --border: #1F2925;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 1.25rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.terminal-line {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.terminal-line .prompt {
+  color: var(--green);
+  margin-right: 0.4rem;
+}
+
+.name {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: var(--text);
+  margin: 0.15rem 0 0;
+  line-height: 1.2;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.55ch;
+  background: var(--green);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.role {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--green);
+  margin: 0.35rem 0 0;
+  font-size: 1rem;
+}
+
+.location {
+  color: var(--text-dim);
+  margin: 0.15rem 0 0;
+  font-size: 0.9rem;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.tags li {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+}
+
+.credentials {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contact-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: border-color 0.15s ease;
+}
+
+.btn:active {
+  border-color: var(--green);
+}
+
+.btn-primary {
+  grid-column: 1 / -1;
+  background: var(--green);
+  color: #06120C;
+  border-color: var(--green);
+  font-weight: 600;
+}
+
+@media (min-width: 480px) {
+  .card {
+    max-width: 420px;
+  }
+}
