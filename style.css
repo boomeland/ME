@@ -151,6 +151,16 @@ body {
   border-color: var(--green);
 }
 
+.btn-flip {
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.btn-flip.flipping {
+  transform: rotateY(90deg);
+}
+
 .btn-primary {
   grid-column: 1 / -1;
   background: var(--green);
