@@ -125,6 +125,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
+  perspective: 800px;
 }
 
 .contact-buttons a:last-child:nth-child(odd) {
@@ -154,7 +155,8 @@ body {
 .btn-flip {
   font-family: inherit;
   cursor: pointer;
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  transform-style: preserve-3d;
+  transition: border-color 0.15s ease, transform 0.3s ease;
 }
 
 .btn-flip.flipping {

@@ -42,6 +42,6 @@
         phoneBtn.setAttribute('aria-label', originalLabel);
       }
       phoneBtn.classList.remove('flipping');
-    }, 150);
+    }, 300);
   });
 })();
